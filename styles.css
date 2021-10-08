@@ -5,9 +5,19 @@ body {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     background-image: url("https://source.unsplash.com/collection/220381/1600x900");
-    background-size: 100vw;
+    width: fit-content;
+    height: 100vh;
+    background-size: cover;
     background-repeat: no-repeat;
     color: #f2f2f2;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
 }
 
 h2 {
@@ -16,8 +26,22 @@ h2 {
 }
 
 p {
-    color: white;
+    color: #eee;
     font-weight: 300;
+}
+
+input {
+    outline: none;
+    background: none;
+    border: none;
+    padding: 5px 20px;
+    color: #eee;
+    caret-color: #eee;
+    text-align: center;
+}
+
+::placeholder {
+    color: #eee;
 }
 
 button {
@@ -26,7 +50,7 @@ button {
 }
 
 .footer {
-    color: white;
+    color: #eee;
     font-size: 12px;
     position: fixed;
     bottom: 0;
@@ -39,6 +63,7 @@ button {
     margin: 0;
     font-size: 6rem;
     font-weight: 700;
+    letter-spacing: 5px;
 }
 
 #overlay {
@@ -51,4 +76,14 @@ button {
   bottom: 0;
   background-color: rgba(0,0,0,0.5);
   z-index: 2;
+}
+
+@media only screen and (max-width: 768px) {
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .clock {
+        font-size: 4.5rem;
+    }
 }

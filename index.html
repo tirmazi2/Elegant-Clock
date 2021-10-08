@@ -11,14 +11,15 @@
 </head>
 <body>
     <div id="overlay">
-    <div class="main">
-        <h2>Stay Blessed</h2>
-        <h1 class="clock">Clock</h1>
-    </div>
-    <div class="footer">
-        <p>“Our greatest glory is not in never failing,
-            but in rising up every time we fail.”</p>
-    </div>
+        <div class="main">
+            <h2>Stay Blessed</h2>
+            <h1 class="clock">Clock</h1>
+            <input id="focus" onchange="todayFocus()" placeholder="Enter focus for today" maxlength="15" autocomplete="off"/>
+        </div>
+        <div class="footer" title="quote of the day">
+            <p id="quote">“Our greatest glory is not in never failing,
+                but in rising up every time we fail.”</p>
+        </div>
     </div>
 </body>
 </html>
